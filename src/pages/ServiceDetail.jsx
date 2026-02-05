@@ -46,7 +46,7 @@ const serviceContent = {
     ]
   },
 
-  'college-laundry': {
+  'pu-laundry': {
     subtitle: (
       <>
         <b>Clean, Hygienic Laundry   Made Easy for Students.</b>

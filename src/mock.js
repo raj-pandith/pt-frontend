@@ -20,7 +20,7 @@ export const services = [
   {
     id: 2,
     title: "PU Laundry Service",
-    slug: "college-laundry",
+    slug: "pu-laundry",
     description:
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",
@@ -49,6 +49,23 @@ export const services = [
       "Customized pickup schedules and fast turnaround",
     ],
   },
+  {
+    id: 3,
+    title: "Hospitality & Industrial Institutions",
+    slug: "pu-laundry",
+    description:
+      "Our Hospitality & Industrial Institutions are designed for efficiency, hygiene, and scale. From workwear and uniforms to linens and protective clothing, we clean, sanitize, and deliver reliably—every time.",
+    icon: "factory",
+    image: "/industry.png",
+    features: [
+      "High-capacity handling for large laundry volumes",
+      "Consistent hygiene and fabric longevity",
+      "Eco-friendly, heavy-duty cleaning processes",
+      "Quality checks at every stage",
+      "Customized pickup schedules and fast turnaround",
+    ],
+  },
+  
 ];
 
 export const whyChooseUs = [
