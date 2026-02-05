@@ -45,7 +45,6 @@ const serviceContent = {
       'Maintains discipline through routine'
     ]
   },
-
   'pu-laundry': {
     subtitle: (
       <>
@@ -121,7 +120,43 @@ const serviceContent = {
       'On-time delivery assurance',
       'Reduced operational stress'
     ]
-  }
+  },
+  'college-laundry': {
+    subtitle: (
+      <>
+        <b>Clean, Hygienic Laundry   Made Easy for Students.</b>
+        <br />
+        <br />
+        We provide reliable, hygienic laundry services for students, covering daily wear and hostel essentials with timely delivery. Our service supports Degree, Engineering, Medical, and Integrated PU Collages with NEET, JEE, CET, and other competitive courses.
+      </>
+    ),
+    processTitle: 'How We Handle College Laundry',
+    processDescription: (
+      <>
+        With scheduled pickup and delivery, students receive clean clothes without delays, queues, or stress.
+        By removing the hassle of laundry, we help students stay comfortable, confident, and focused on academics, exams, and campus life while colleges enjoy a smooth, well-managed service.
+      </>
+    ),
+    whoFor: ['Colleges', 'Universities', 'Hostels', 'PGs'],
+    challenges: [
+      { problem: 'No time for laundry', solution: 'Fully managed service' },
+      { problem: 'Lack of washing space', solution: 'Professional infrastructure' },
+      { problem: 'Clothes get mixed', solution: 'Proper tagging & tracking' },
+      { problem: 'Laundry stress', solution: 'Regular pickup schedules' },
+      { problem: 'Hygiene concerns', solution: 'Sanitized wash process' },
+      { problem: 'Staff burden', solution: 'End-to-end management' }
+    ],
+    benefits: [
+      'More time for studies and campus life',
+      'Hassle-free laundry routines',
+      'Organized hostel living',
+      'Affordable institutional pricing',
+      'Reliable weekly schedules',
+      'Improved hygiene standards',
+      'Reduced stress for students',
+      'Peace of mind for parents'
+    ]
+  },
 };
 
 const ServiceDetail = () => {

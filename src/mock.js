@@ -64,6 +64,20 @@ export const services = [
       "Quality checks at every stage",
       "Customized pickup schedules and fast turnaround",
     ],
+  }, {
+    id: 4,
+    title: "College Laundry Service",
+    slug: "college-laundry",
+    description:
+      "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
+    icon: "graduationCap",
+    image: "/college.png",
+    features: [
+      "More time for studies and campus life",
+      "Hassle-free laundry with scheduled routines",
+      "Professional hygiene and fabric care standards",
+      "Doorstep pickup and delivery within campus",
+    ],
   },
   
 ];

@@ -13,6 +13,7 @@ const Header = () => {
   const institutesLinks = [
     { name: 'Residential School Laundry Service', path: '/services/residential-school' },
     { name: 'PU Laundry Service', path: '/services/pu-laundry' },
+    { name: 'College Laundry Service', path: '/services/college-laundry' },
     { name: 'Hospitality & Industrial Institutions', path: '/services/industrial-laundry' },
   ];
 
