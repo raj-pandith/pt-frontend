@@ -8,7 +8,8 @@ export const services = [
     description:
       "Fresh, clean uniforms for happy school days. Our school laundry service supports hygiene, comfort, and discipline by ensuring uniforms and bedding are washed with care and delivered on time.",
     icon: "school",
-    image: "/Residential school laundry service-01.png",
+    // image: "/Residential school laundry service-01.png",
+    image: "/newImages/residential.png",
     features: [
       "Designed with children’s comfort and safety in mind",
       "Consistent service throughout the academic year",
@@ -24,7 +25,8 @@ export const services = [
     description:
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",
-    image: "/college.png",
+    // image: "/college.png",
+    image: "/newImages/pu.png",
     features: [
       "More time for studies and campus life",
       "Hassle-free laundry with scheduled routines",
@@ -39,7 +41,8 @@ export const services = [
     description:
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",
-    image: "/college.png",
+    // image: "/college.png",
+    image: "/newImages/university.png",
     features: [
       "More time for studies and campus life",
       "Hassle-free laundry with scheduled routines",
@@ -47,28 +50,15 @@ export const services = [
       "Doorstep pickup and delivery within campus",
     ],
   },
-   {
-    id: 3,
-    title: "Universities, Medical & Higher Education Institutions",
-    slug: "universities-laundry",
-    description:
-      "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
-    icon: "graduationCap",
-    image: "/college.png",
-    features: [
-      "More time for studies and campus life",
-      "Hassle-free laundry with scheduled routines",
-      "Professional hygiene and fabric care standards",
-      "Doorstep pickup and delivery within campus",
-    ],
-  },{
+  {
     id: 4,
     title: "Hospitality & Industrial Institutions",
     slug: "industrial-laundry",
     description:
       "Our Hospitality & Industrial Institutions are designed for efficiency, hygiene, and scale. From workwear and uniforms to linens and protective clothing, we clean, sanitize, and deliver reliably—every time.",
     icon: "factory",
-    image: "/industry.png",
+    // image: "/industry.png",
+    image: "/newImages/hospitality.png",
     features: [
       "High-capacity handling for large laundry volumes",
       "Consistent hygiene and fabric longevity",

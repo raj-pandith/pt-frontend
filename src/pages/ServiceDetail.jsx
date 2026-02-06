@@ -213,7 +213,8 @@ const ServiceDetail = () => {
           <img
             src={service.image}
             alt={service.title}
-            className="w-full max-w-sm h-64 md:h-80 lg:h-96 object-contain rounded-2xl ml-auto"
+            // className="w-full max-w-sm h-64 md:h-80 lg:h-96 object-contain rounded-2xl ml-auto"
+            className="w-full h-80 md:h-96 lg:h-[32rem] object-cover rounded-2xl ml-auto"
           />
         </div>
       </section>

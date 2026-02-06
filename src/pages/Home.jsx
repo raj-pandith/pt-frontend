@@ -10,9 +10,13 @@ const Home = () => {
   /* 🔁 HERO SLIDER LOGIC */
   // Exactly 3 images as requested
   const heroImages = [
-    "/hero1.png",
-    "/hero3.png",
-    "/hero2.png"
+    // "/hero1.png",
+    // "/hero3.png",
+    // "/hero2.png",
+    "/newImages/pu.png",
+    "/newImages/hospitality.png",
+    "/newImages/university.png",
+
   ];
 
   const [currentHeroSlide, setCurrentHeroSlide] = React.useState(0);
@@ -98,13 +102,14 @@ const Home = () => {
               {heroImages.map((img, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center lg:justify-end lg:pr-96 ${index === currentHeroSlide ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+                  className={`absolute  inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center lg:justify-end lg:pr-96 ${index === currentHeroSlide ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
                     }`}
                 >
                   <img
                     src={img}
                     alt="Laundry Service"
-                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[5.5]"
+                    // className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[5.5]"
+                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[4.0] lg:translate-x-40"
                   />
 
                 </div>
