@@ -67,7 +67,7 @@ export const services = [
   }, {
     id: 4,
     title: "College Laundry Service",
-    slug: "college-laundry",
+    slug: "universities-laundry",
     description:
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",

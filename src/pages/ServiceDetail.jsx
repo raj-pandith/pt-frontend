@@ -48,20 +48,20 @@ const serviceContent = {
   'pu-laundry': {
     subtitle: (
       <>
-        <b>Clean, Hygienic Laundry   Made Easy for Students.</b>
+        <b>Hygienic, Reliable Laundry Solutions for Residential Academic Excellence
+        </b>
         <br />
         <br />
-        We provide reliable, hygienic laundry services for students, covering daily wear and hostel essentials with timely delivery. Our service supports Degree, Engineering, Medical, and Integrated PU Collages with NEET, JEE, CET, and other competitive courses.
+        We provide clean, hygienic, and reliable laundry services for Residential PU Colleges and Integrated Coaching Campuses. Designed for institutions with NEET, JEE, CET, and foundation coaching, our service ensures students receive fresh clothes on time without disrupting their study schedules.
       </>
     ),
     processTitle: 'How We Handle PU Laundry',
     processDescription: (
       <>
-        With scheduled pickup and delivery, students receive clean clothes without delays, queues, or stress.
-        By removing the hassle of laundry, we help students stay comfortable, confident, and focused on academics, exams, and campus life while colleges enjoy a smooth, well-managed service.
+        Our structured laundry process is designed for fully residential PU and junior college campuses. With scheduled pickup and delivery, students receive clean clothes without queues or delays, helping management maintain hygiene standards while students stay focused on academics and exam preparation.
       </>
     ),
-    whoFor: ['Colleges', 'Universities', 'Hostels', 'PGs'],
+    whoFor: ['PU Colleges with Integrated NEET Coaching', 'PU Colleges with Integrated JEE / CET Coaching', 'Residential Junior Colleges', 'Pre-University Boarding Campuses', 'Integrated Foundation Academies'],
     challenges: [
       { problem: 'No time for laundry', solution: 'Fully managed service' },
       { problem: 'Lack of washing space', solution: 'Professional infrastructure' },
@@ -71,35 +71,34 @@ const serviceContent = {
       { problem: 'Staff burden', solution: 'End-to-end management' }
     ],
     benefits: [
-      'More time for studies and campus life',
-      'Hassle-free laundry routines',
-      'Organized hostel living',
-      'Affordable institutional pricing',
-      'Reliable weekly schedules',
-      'Improved hygiene standards',
-      'Reduced stress for students',
-      'Peace of mind for parents'
+      'Tailored for Residential PU Campuses',
+      'High Hygiene & Safety Standards',
+      'Supports Competitive Exam Preparation',
+      'Uniform & Hostel Laundry Management',
+      'Reliable Weekly Pickup & Delivery',
+      'Affordable Institutional Pricing',
+      'Improved Hostel Organization',
+      'Peace of Mind for Parents & Management'
     ]
   },
 
   'industrial-laundry': {
     subtitle: (
       <>
-        <b>Clean, Fresh Workwear  Every Single Day</b>
+        <b>Professional Laundry Solutions for High-Volume Commercial Operations</b>
         <br />
         <br />
-        We provide reliable industrial laundry services for businesses of all sizes. From uniforms and workwear to linens and protective clothing, we clean, sanitize, and deliver everything on time so your team is always ready to work.
+        We provide reliable, hygienic, and scalable laundry services for hospitality and industrial institutions, supporting operations where cleanliness, consistency, and turnaround time are critical. From hotels and resorts to manufacturing plants and large corporate campuses, our laundry solutions are designed to handle high-volume, continuous-use environments with efficiency and care.
       </>
     ),
     processTitle: 'How We Handle Hospitality & Industrial Institutions',
     processDescription:
-      'Our industrial laundry services are designed for high-volume operations. From uniforms and workwear to linens and protective clothing, we ensure hygienic cleaning, fabric safety, and timely delivery helping businesses operate smoothly.',
+      'Hospitality and industrial facilities require a fast, organized, and dependable laundry system to support daily operations without interruption. Our scheduled pickup and delivery model ensures smooth laundry flow across departments and facilities',
     whoFor: [
-      'Hotels & Resorts',
-      'Industrial Units & Manufacturing Plants',
-      'Warehouses & Logistics Parks',
-      'Uniform-Based Organizations',
-      'Large Corporate Campuses'
+      'Hotel linens, bedding, and towels',
+      'Staff uniforms and workwear',
+      'Industrial and corporate laundry requirements',
+      'Bulk laundry for large operational teams',
     ],
     challenges: [
       { problem: 'Large laundry volumes', solution: 'High-capacity processing' },
@@ -111,33 +110,33 @@ const serviceContent = {
       { problem: 'Extra manpower required', solution: 'Fully outsourced service' }
     ],
     benefits: [
-      'Handles bulk laundry efficiently',
-      'Saves staff time and effort',
-      'Maintains hygiene compliance',
-      'Careful with tough & delicate fabrics',
-      'Eco-conscious cleaning methods',
-      'Accurate tracking system',
-      'On-time delivery assurance',
-      'Reduced operational stress'
+      'Built for High-Volume Operations',
+      'Commercial-Grade Hygiene Standards',
+      'Fast & Reliable Turnaround Times',
+      'Uniform & Linen Management',
+      'Scalable Service Models',
+      'Cost-Effective Commercial Pricing',
+      'Reduced Operational Burden',
+      'Consistent Quality & Professional Handling'
     ]
   },
-  'college-laundry': {
+  'universities-laundry': {
     subtitle: (
       <>
-        <b>Clean, Hygienic Laundry   Made Easy for Students.</b>
+        <b>Professional Laundry Services for Higher Education & Healthcare Campuses
+        </b>
         <br />
         <br />
-        We provide reliable, hygienic laundry services for students, covering daily wear and hostel essentials with timely delivery. Our service supports Degree, Engineering, Medical, and Integrated PU Collages with NEET, JEE, CET, and other competitive courses.
+        We provide reliable, hygienic, and large-scale laundry services for colleges, universities, and medical & healthcare institutions with hostels, residential blocks, hospitals, clinics, and staff housing. Our laundry solutions are designed to support academic campuses, medical colleges, and healthcare facilities where cleanliness, consistency, and timely service are essential for daily operations.
       </>
     ),
     processTitle: 'How We Handle College Laundry',
     processDescription: (
       <>
-        With scheduled pickup and delivery, students receive clean clothes without delays, queues, or stress.
-        By removing the hassle of laundry, we help students stay comfortable, confident, and focused on academics, exams, and campus life while colleges enjoy a smooth, well-managed service.
+        Education and healthcare institutions require a structured, high-capacity laundry system that works without disrupting schedules or compromising hygiene. Our scheduled pickup and delivery model ensures smooth laundry operations across campuses, hostels, hospitals, and residential facilities.
       </>
     ),
-    whoFor: ['Colleges', 'Universities', 'Hostels', 'PGs'],
+    whoFor: ['Engineering Colleges', 'Medical & Dental Colleges', 'Nursing & Paramedical Colleges', 'Degree Colleges', 'Universities & Deemed Universities', 'Autonomous Colleges', 'Institutional Hostels & Student Housing', 'Multi-Speciality Hospitals', 'Super-Speciality Hospitals', 'Clinics & Diagnostic Centres'],
     challenges: [
       { problem: 'No time for laundry', solution: 'Fully managed service' },
       { problem: 'Lack of washing space', solution: 'Professional infrastructure' },
@@ -147,14 +146,14 @@ const serviceContent = {
       { problem: 'Staff burden', solution: 'End-to-end management' }
     ],
     benefits: [
-      'More time for studies and campus life',
-      'Hassle-free laundry routines',
-      'Organized hostel living',
-      'Affordable institutional pricing',
-      'Reliable weekly schedules',
-      'Improved hygiene standards',
-      'Reduced stress for students',
-      'Peace of mind for parents'
+      'Built for Large Institutional Campuse',
+      'High Hygiene & Safety Standards',
+      'Safe Handling of Medical & Institutional Textiles',
+      'Reliable Pickup & Delivery Schedules',
+      'Scalable & Centralized Laundry Management',
+      'Cost-Effective Institutional Pricing',
+      'Reduced Operational & Administrative Load',
+      'Peace of Mind for Management, Staff & Parents'
     ]
   },
 };

@@ -11,9 +11,9 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   const institutesLinks = [
-    { name: 'Residential School Laundry Service', path: '/services/residential-school' },
-    { name: 'PU Laundry Service', path: '/services/pu-laundry' },
-    { name: 'College Laundry Service', path: '/services/college-laundry' },
+    { name: 'Residential School Institutions', path: '/services/residential-school' },
+    { name: 'Residential PU Colleges & Integrated Coaching Campuses', path: '/services/pu-laundry' },
+    { name: 'Universities, Medical & Higher Education Institutions', path: '/services/universities-laundry' },
     { name: 'Hospitality & Industrial Institutions', path: '/services/industrial-laundry' },
   ];
 
