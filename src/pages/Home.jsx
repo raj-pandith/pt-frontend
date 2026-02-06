@@ -109,7 +109,7 @@ const Home = () => {
                     src={img}
                     alt="Laundry Service"
                     // className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[5.5]"
-                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[4.0] lg:translate-x-40"
+                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[4.0] lg:translate-x-72"
                   />
 
                 </div>
