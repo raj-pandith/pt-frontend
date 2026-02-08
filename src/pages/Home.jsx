@@ -10,9 +10,9 @@ const Home = () => {
   /* 🔁 HERO SLIDER LOGIC */
   // Exactly 3 images as requested
   const heroImages = [
-    "/imageforhomepageslider/pu.png",
-    "/imageforhomepageslider/school.png",
-    "/imageforhomepageslider/higher edu.png",
+    "/images/pu.png",
+    "/images/school.png",
+    "/images/higher edu.png",
   ];
 
   const [currentHeroSlide, setCurrentHeroSlide] = React.useState(0);
