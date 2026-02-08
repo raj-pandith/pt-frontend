@@ -10,12 +10,9 @@ const Home = () => {
   /* 🔁 HERO SLIDER LOGIC */
   // Exactly 3 images as requested
   const heroImages = [
-    // "/hero1.png",
-    // "/hero3.png",
-    // "/hero2.png",
-    "/newImages/pu.png",
-    "/newImages/hospitality.png",
-    "/newImages/university.png",
+    "/imageforhomepageslider/pu_1.png",
+    "/imageforhomepageslider/school_2.png",
+    "/imageforhomepageslider/higher_edu_3.png",
 
   ];
 
@@ -109,7 +106,7 @@ const Home = () => {
                     src={img}
                     alt="Laundry Service"
                     // className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[5.5]"
-                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[4.0] lg:translate-x-72"
+                    className="w-[120%] h-[120%] object-contain scale-150 lg:scale-[3.0] lg:translate-x-40"
                   />
 
                 </div>
