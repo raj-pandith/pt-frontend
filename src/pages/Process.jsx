@@ -82,7 +82,7 @@ const Process = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-sky-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Laundry Solution</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Laundry Process</h1>
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto">
             A systematic, step-by-step approach ensuring quality at every stage
           </p>
@@ -93,7 +93,7 @@ const Process = () => {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-base text-gray-600 leading-relaxed">
-           Our laundry solution delivers clean, fresh, and well-maintained garments with complete reliability. Every step is carefully managed to ensure high hygiene standards, advanced fabric care, and on-time delivery. Using eco-friendly detergents, modern washing techniques, and strict quality checks, we protect fabric life while providing safe, hygienic laundry services. Our efficient pickup and delivery system ensures a hassle-free experience, saving time while maintaining cleanliness and comfort.
+            Our laundry solution delivers clean, fresh, and well-maintained garments with complete reliability. Every step is carefully managed to ensure high hygiene standards, advanced fabric care, and on-time delivery. Using eco-friendly detergents, modern washing techniques, and strict quality checks, we protect fabric life while providing safe, hygienic laundry services. Our efficient pickup and delivery system ensures a hassle-free experience, saving time while maintaining cleanliness and comfort.
           </p>
         </div>
       </section>
