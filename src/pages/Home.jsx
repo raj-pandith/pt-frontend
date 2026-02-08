@@ -166,13 +166,13 @@ const Home = () => {
           </div>
 
           {/* IMPORTANT CHANGE: items-stretch */}
-          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid md:grid-cols-2 gap-14 items-stretch">
             {services.map((service) => (
               <Card
                 key={service.id}
                 className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group h-full flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-80 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
