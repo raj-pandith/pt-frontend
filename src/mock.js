@@ -9,7 +9,7 @@ export const services = [
       "Fresh, clean uniforms for happy school days. Our school laundry service supports hygiene, comfort, and discipline by ensuring uniforms and bedding are washed with care and delivered on time.",
     icon: "school",
     // image: "/Residential school laundry service-01.png",
-    image: "/newImages2/school.png",
+    image: "/serviceimages/school.png",
     features: [
       "Designed with children’s comfort and safety in mind",
       "Consistent service throughout the academic year",
@@ -26,7 +26,7 @@ export const services = [
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",
     // image: "/college.png",
-    image: "/newImages2/pu.png",
+    image: "/serviceimages/pu.png",
     features: [
       "More time for studies and campus life",
       "Hassle-free laundry with scheduled routines",
@@ -42,7 +42,7 @@ export const services = [
       "Clean, hygienic laundry made easy for students. We manage hostel and college laundry efficiently, so students focus on academics while we handle washing, care, and timely delivery.",
     icon: "graduationCap",
     // image: "/college.png",
-    image: "/newImages2/higher edu.png",
+    image: "/serviceimages/higher edu.png",
     features: [
       "More time for studies and campus life",
       "Hassle-free laundry with scheduled routines",
@@ -58,7 +58,7 @@ export const services = [
       "Our Hospitality & Industrial Institutions are designed for efficiency, hygiene, and scale. From workwear and uniforms to linens and protective clothing, we clean, sanitize, and deliver reliably—every time.",
     icon: "factory",
     // image: "/industry.png",
-    image: "/newImages2/industry.png",
+    image: "/serviceimages/industry.png",
     features: [
       "High-capacity handling for large laundry volumes",
       "Consistent hygiene and fabric longevity",
