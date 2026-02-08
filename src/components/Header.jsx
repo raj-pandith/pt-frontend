@@ -106,7 +106,7 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <Link to="/" className={navLinkClass(isActive('/'))}>Home</Link>
               <Link to="/about" className={navLinkClass(isActive('/about'))}>About Us</Link>
-              <Link to="/process" className={navLinkClass(isActive('/process'))}>Our Process</Link>
+              <Link to="/process" className={navLinkClass(isActive('/process'))}>Our Solution</Link>
 
               <div className="space-y-2">
                 <div className="text-base font-semibold text-gray-900">
