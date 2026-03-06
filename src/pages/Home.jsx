@@ -178,7 +178,7 @@ const Home = () => {
                 </div>
 
                 {/* IMPORTANT CHANGE: flex + h-full */}
-                <CardContent className="p-6 flex flex-col h-full">
+                <CardContent className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {service.title}
                   </h3>
