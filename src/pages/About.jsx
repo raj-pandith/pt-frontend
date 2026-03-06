@@ -135,7 +135,7 @@ const About = () => {
             ].map((institute, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-center space-x-3 p-4 bg-[rgb(219,234,254)] rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
                 <CheckCircle className="h-5 w-5 text-sky-600 flex-shrink-0" />
                 <span className="text-gray-700 font-medium">{institute}</span>
@@ -152,7 +152,7 @@ const About = () => {
             Why Schools, Colleges & Industries Trust <br className="hidden md:block" /> Venus Fabcare
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-4 text-left">
+          <div className="grid md:grid-cols-3 gap-4 text-left ">
             {[
               'We understand the institution\'s responsibility',
               'We work patiently and consistently',
