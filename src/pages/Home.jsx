@@ -29,9 +29,9 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-sky-50">
 
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden bg-[#0e4a8f] min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full pt-20 pb-16 lg:pt-0 lg:pb-0">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full">
+      <section className="relative w-full overflow-hidden bg-[#0e4a8f] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full  ">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ">
 
             {/* LEFT COLUMN: Content */}
             <div className="text-left space-y-6 z-30 relative">
@@ -94,7 +94,7 @@ const Home = () => {
             </div>
 
             {/* RIGHT COLUMN: Slider Images */}
-            <div className="relative h-[800px] md:h-[900px] lg:h-[100vh] w-full flex items-center justify-center lg:justify-end">
+            <div className="relative h-[800px] md:h-[900px] lg:h-[84vh] w-full flex items-center justify-center lg:justify-end">
               {heroImages.map((img, index) => (
                 <div
                   key={index}
@@ -117,7 +117,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-36 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
