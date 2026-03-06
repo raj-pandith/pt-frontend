@@ -218,7 +218,7 @@ const Home = () => {
 
 
       {/* Why Choose Us */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
@@ -276,25 +276,26 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-gradient-to-r from-blue-900 to-sky-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Partner with Venus Fabcare?
-          </h2>
-          <p className="text-xl mb-8 text-sky-100">
-            Let's handle laundry, while your institution focuses on its core mission
-          </p>
-          <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-sky-50 text-lg px-10 py-6">
-            <Link to="/contact">
-              Contact Us Today
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+        {/* CTA Section */}
+        <div className="py-12 lg:py-12 text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Partner with Venus Fabcare?
+            </h2>
+            <p className="text-xl mb-8 text-sky-100">
+              Let's handle laundry, while your institution focuses on its core mission
+            </p>
+            <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-sky-50 text-lg px-10 py-6">
+              <Link to="/contact">
+                Contact Us Today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
+
+
     </div>
   );
 };
