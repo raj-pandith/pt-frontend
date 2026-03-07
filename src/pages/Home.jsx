@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { ArrowRight, CheckCircle, Sparkles, Truck, Calendar, GitBranch, Leaf, Cpu, Users, Tag, Eye, Package } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles, Truck, Calendar, GitBranch, Leaf, Cpu, Users, Tag, Eye, Package, ShoppingBag } from 'lucide-react';
 import { services, whyChooseUs, testimonials } from '../mock';
 import Process from "./Process";
 const Home = () => {
@@ -226,7 +226,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="text-center p-6 rounded-xl bg-blue-100 hover:bg-blue-50 transition-colors">
                 <div className="inline-flex items-center justify-center w-14 h-14 bg-sky-600 text-white rounded-full mb-4">
@@ -240,7 +240,8 @@ const Home = () => {
                       users: Users,
                       tag: Tag,
                       eye: Eye,
-                      package: Package
+                      package: Package,
+                      ShoppingBag: ShoppingBag,
                     }[item.icon] || Package;
                     return <Icon className="h-7 w-7" />;
                   })()}

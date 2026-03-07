@@ -2,11 +2,31 @@ import React from 'react';
 import { CheckCircle, Award, Target, Heart } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 
+
+
 const About = () => {
+
+  const whoFor = [
+    'We understand the institution\'s responsibility',
+    'We work patiently and consistently',
+    'We follow routines without compromise',
+    'We treat every uniform with care',
+    'We use eco-friendly, fabric-safe products',
+    'We maintain the highest hygiene standards',
+    'We provide transparent processes',
+    'We deliver on time, every time'
+  ]
+  const whoWeServeLayout =
+    whoFor.length >= 5
+      ? 'flex flex-wrap justify-center max-w-6xl'
+      : whoFor.length === 4
+        ? 'grid sm:grid-cols-2 lg:grid-cols-4 max-w-7xl'
+        : 'grid sm:grid-cols-2 lg:grid-cols-3 max-w-4xl';
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-sky-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-sky-700 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-900 to-sky-700 text-white py-5 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Venus Fabcare</h1>
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto">
@@ -16,7 +36,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 lg:py-24">
+      <section className="py-16 lg:py-0 scale-75 -m-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -146,7 +166,7 @@ const About = () => {
       </section>
 
       {/* Why Trust Us */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-sky-700 text-white">
+      {/* <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-sky-700 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-tight">
             Why Schools, Colleges & Industries Trust <br className="hidden md:block" /> Venus Fabcare
@@ -170,7 +190,27 @@ const About = () => {
             ))}
           </div>
         </div>
+      </section> */}
+
+      <section className=" py-10 bg-gradient-to-br from-blue-900 to-sky-700 py-10 lg:py-12 bg-gradient-to-br from-blue-900 to-sky-700 text-white ">
+        <h2 className="text-2xl md:text-4xl font-bold mb-3 leading-tight text-center scale-90">
+          Why Schools, Colleges & Industries Trust <br className="hidden md:block" /> Venus Fabcare
+        </h2>
+        <div className={`gap-6 mx-auto ${whoWeServeLayout} scale-90 `}>
+          {whoFor.map((item, i) => (
+            <Card
+              key={i}
+              className={`bg-blue-100 pt-3  border-sky-100 ${whoFor.length >= 5 ? 'w-full sm:w-[45%] lg:w-[30%] ' : ''} flex items-center space-x-4 bg-white/10 backdrop-blur-md border border-white/10  rounded-xl hover:bg-white/20 transition-all duration-300`}
+            >
+              <CardContent className=" flex gap-2">
+                <CheckCircle className="mx-auto  text-sky-600" />
+                <p className=" text-gray-700 text-white">{item}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </section>
+
     </div>
   );
 };

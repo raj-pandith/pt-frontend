@@ -111,6 +111,11 @@ export const whyChooseUs = [
     title: "Neat & Organized Packaging",
     description: "Cleanly folded, labeled, and ready-to-use delivery.",
   },
+  {
+    icon: "ShoppingBag",
+    title: "Complimentary Laundry Bags",
+    description: "We provide durable, reusable bags for easy sorting and secure transport",
+  },
 ];
 
 export const testimonials = [

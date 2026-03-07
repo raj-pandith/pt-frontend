@@ -86,113 +86,76 @@ const Process = () => {
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto">
             A systematic, step-by-step approach ensuring quality at every stage
           </p>
-        </div>
-      </section>
-
-      {/* Process Flow Introduction */}
-      <section className="py-16 lg:py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-base text-gray-600 leading-relaxed">
+          <p className="text-base text-sky-100 leading-relaxed pt-3">
             Our laundry solution delivers clean, fresh, and well-maintained garments with complete reliability. Every step is carefully managed to ensure high hygiene standards, advanced fabric care, and on-time delivery. Using eco-friendly detergents, modern washing techniques, and strict quality checks, we protect fabric life while providing safe, hygienic laundry services. Our efficient pickup and delivery system ensures a hassle-free experience, saving time while maintaining cleanliness and comfort.
           </p>
         </div>
       </section>
 
+      {/* Process Flow Introduction */}
+      {/* <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          
+        </div>
+      </section> */}
+
       {/* Process Steps - Exact Image Match */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-4 relative">
-          {/* Continuous vertical line through all steps */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gray-300" />
+      <section className="py-16 lg:py-0 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
 
-          {processSteps.map((step, index) => {
-            const isLeft = index % 2 === 0;
-            const Icon = ProcessIcons[step.icon];
+          <div className="grid md:grid-cols-2 gap-10">
+            {processSteps.map((step) => {
+              const Icon = ProcessIcons[step.icon];
 
-            return (
-              <div
-                key={step.id}
-                className="relative flex items-center justify-center py-8"
-              >
-                {/* Container with three columns */}
-                <div className="w-full flex items-center justify-center relative z-10 gap-6">
-
-                  {/* Left Side */}
-                  <div className="flex-1 flex justify-end">
-                    {isLeft ? (
-                      // Box on left with image
-                      <div className="w-48 h-36 bg-gradient-to-br from-white-50 to-blue-50 rounded-lg border border-blue-100 overflow-hidden shadow-sm">
-                        <img
-                          src={step.image}
-                          alt={step.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : (
-                      // Text on left
-                      <div className="text-right">
-                        <div className="text-xs text-sky-600 font-medium mb-1">
-                          Step {String(step.id).padStart(2, '0')}
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          {step.title}
-                        </h3>
-                        <p className="text-xs text-gray-600 leading-relaxed max-w-xs ml-auto">
-                          {step.description}
-                        </p>
-                      </div>
-                    )}
+              return (
+                <div
+                  key={step.id}
+                  className="flex items-start gap-6 bg-gray-50 p-6 rounded-xl shadow-sm"
+                >
+                  {/* Icon */}
+                  <div className="w-14 h-14 rounded-full bg-sky-600 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-7 h-7 text-white" />
                   </div>
 
-                  {/* Center - Circle Icon */}
-                  <div className="flex-shrink-0 w-16 h-16 relative flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-sky-600 flex items-center justify-center z-10 shadow-md border-4 border-white">
-                      <Icon className="w-8 h-8 text-white" strokeWidth={2} />
+                  {/* Content */}
+                  <div>
+                    <div className="text-sm text-sky-600 font-semibold mb-1">
+                      Step {String(step.id).padStart(2, "0")}
+                    </div>
+
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                      {step.title}
+                    </h3>
+
+                    <p className="text-sm text-gray-600 mb-3">
+                      {step.description}
+                    </p>
+
+                    <div className="w-full h-36 rounded-lg overflow-hidden border border-blue-100">
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
-
-                  {/* Right Side */}
-                  <div className="flex-1 flex justify-start">
-                    {isLeft ? (
-                      // Text on right
-                      <div className="text-left">
-                        <div className="text-xs text-white-600 font-medium mb-1">
-                          Step {String(step.id).padStart(2, '0')}
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          {step.title}
-                        </h3>
-                        <p className="text-xs text-gray-600 leading-relaxed max-w-xs">
-                          {step.description}
-                        </p>
-                      </div>
-                    ) : (
-                      // Box on right with image
-                      <div className="w-48 h-36 bg-gradient-to-br from-white-50 to-blue-50 rounded-lg border border-blue-100 overflow-hidden shadow-sm">
-                        <img
-                          src={step.image}
-                          alt={step.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    )}
-                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
         </div>
       </section>
-
       {/* Process Highlights */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 lg:py-0 bg-gradient-to-b lg:pt-3 from-blue-50 to-white scale-75">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
               What Makes Our Solution Special
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 ">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-sky-100 text-sky-600 rounded-full mb-4">
@@ -233,7 +196,7 @@ const Process = () => {
       </section>
 
       {/* Operational Setup */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 lg:py-0 lg:pb-6 -m-5 bg-white scale-90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -244,7 +207,7 @@ const Process = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:-m-3">
             <Card className="border-sky-200 shadow-lg bg-sky-50 hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
@@ -279,7 +242,7 @@ const Process = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-900 to-sky-700 text-white">
+      <section className="py-16 lg:py-12 bg-gradient-to-r from-blue-900 to-sky-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Experience Our Solution-Driven Approach

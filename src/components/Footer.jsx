@@ -62,6 +62,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/services/universities-laundry" className="text-gray-300 hover:text-sky-400 transition-colors text-sm">
+                  Universities, Medical & Higher Education Institutions
+                </Link>
+              </li>
+              <li>
                 <Link to="/services/industrial-laundry" className="text-gray-300 hover:text-sky-400 transition-colors text-sm">
                   Hospitality & Industrial Institutions
                 </Link>

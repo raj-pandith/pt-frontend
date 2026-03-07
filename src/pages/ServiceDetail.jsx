@@ -193,9 +193,9 @@ const ServiceDetail = () => {
         : 'grid sm:grid-cols-2 lg:grid-cols-3 max-w-4xl';
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-sky-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-sky-50 ">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-sky-700 text-white py-10">
+      <section className="bg-gradient-to-br from-blue-900 to-sky-700 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-100 items-center">
           <div>
             <Link to="/" className="inline-flex items-center mb-6 text-sky-100 hover:text-white">
@@ -244,7 +244,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-sky-50">
+      <section className="py-6 bg-sky-50">
         <h2 className="text-4xl font-bold text-center text-blue-900 mb-10">
           What Makes Our Service Special
         </h2>
