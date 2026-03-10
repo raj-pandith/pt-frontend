@@ -34,7 +34,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ">
 
             {/* LEFT COLUMN: Content */}
-            <div className="text-left space-y-6 z-30 relative">
+            <div className="text-left space-y-6 z-30 pt-5 relative">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 backdrop-blur-sm text-sky-100 text-sm font-medium shadow-sm">
                 <span className="text-sky-200">✦</span>
