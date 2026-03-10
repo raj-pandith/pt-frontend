@@ -10,7 +10,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img
-              src="https://customer-assets.emergentagent.com/job_c7b18a6e-5dbd-4a9a-a02e-46cd6ab4363b/artifacts/jgmdbhj8_VENUS%20FABCARE%20%281%29.png"
+              // src="https://customer-assets.emergentagent.com/job_c7b18a6e-5dbd-4a9a-a02e-46cd6ab4363b/artifacts/jgmdbhj8_VENUS%20FABCARE%20%281%29.png"
+              src="./logo.png"
               alt="Venus Fabcare Logo"
               className="h-40 w-auto brightness-0 invert"
             />

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Package, FolderOpen, Search, Waves, Shield, Wind,
-  CheckCircle, Box, Truck, ArrowRight, Building2, MapPin
+  CheckCircle, Box, Truck, ArrowRight, Building2, MapPin, ArrowDown, ArrowLeft,
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 
@@ -35,13 +35,18 @@ const processSteps = [
     image: "/4.png"
   },
   {
-    id: 5,
-    title: "Fabric Care",
-    description: "Extra care is taken to maintain color, softness, and durability.",
-    icon: "shield",
-    image: "/5.jpg"
-  },
-  {
+    id: 8,
+    title: "Delivery",
+    description: "Securely packed and delivered on time.",
+    icon: "box",
+    image: "/8.jpg"
+  }, {
+    id: 7,
+    title: "Quality Check",
+    description: "Each batch is inspected before dispatch.",
+    icon: "checkCircle",
+    image: "/7.jpg"
+  }, {
     id: 6,
     title: "Drying & Finishing",
     description: "Clothes are dried, pressed, or folded as required.",
@@ -49,19 +54,15 @@ const processSteps = [
     image: "/6.png"
   },
   {
-    id: 7,
-    title: "Quality Check",
-    description: "Each batch is inspected before dispatch.",
-    icon: "checkCircle",
-    image: "/7.jpg"
+    id: 5,
+    title: "Fabric Care",
+    description: "Extra care is taken to maintain color, softness, and durability.",
+    icon: "shield",
+    image: "/5.jpg"
   },
-  {
-    id: 8,
-    title: "Delivery",
-    description: "Securely packed and delivered on time.",
-    icon: "box",
-    image: "/8.jpg"
-  }
+
+
+
 ];
 
 const ProcessIcons = {
@@ -99,53 +100,105 @@ const Process = () => {
         </div>
       </section> */}
 
-      {/* Process Steps - Exact Image Match */}
-      <section className="py-16 lg:py-0 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
 
-          <div className="grid md:grid-cols-2 gap-10">
-            {processSteps.map((step) => {
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+
+          <div className="flex flex-wrap items-center justify-center gap-8">
+
+            {processSteps.map((step, index) => {
               const Icon = ProcessIcons[step.icon];
 
-              return (
-                <div
-                  key={step.id}
-                  className="flex items-start gap-6 bg-gray-50 p-6 rounded-xl shadow-sm"
-                >
-                  {/* Icon */}
-                  <div className="w-14 h-14 rounded-full bg-sky-600 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-7 h-7 text-white" />
-                  </div>
+              const itemsPerRow = 4;
+              const row = Math.floor(index / itemsPerRow);
+              const position = index % itemsPerRow;
 
-                  {/* Content */}
-                  <div>
-                    <div className="text-sm text-sky-600 font-semibold mb-1">
-                      Step {String(step.id).padStart(2, "0")}
+              let ArrowComponent = ArrowRight;
+
+              // Even row → arrows go right
+              if (row % 2 === 0) {
+                if (position === itemsPerRow - 1) {
+                  ArrowComponent = ArrowDown; // last item → go down
+                } else {
+                  ArrowComponent = ArrowRight;
+                }
+              }
+
+              // Odd row → arrows go left
+              else {
+                if (position === itemsPerRow - 1) {
+                  ArrowComponent = ArrowDown;
+                } else {
+                  ArrowComponent = ArrowLeft;
+                }
+              }
+
+
+              return (
+                <React.Fragment key={step.id}>
+
+                  {/* Step */}
+                  <div className="flex flex-col items-center text-center w-48">
+
+                    <div className="w-16 h-16 rounded-full bg-sky-600 flex items-center justify-center mb-3">
+                      <Icon className="w-7 h-7 text-white" />
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900">
                       {step.title}
                     </h3>
 
-                    <p className="text-sm text-gray-600 mb-3">
+                    <p className="text-sm text-gray-600 mt-1">
                       {step.description}
                     </p>
 
-                    <div className="w-full h-36 rounded-lg overflow-hidden border border-blue-100">
-                      <img
-                        src={step.image}
-                        alt={step.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    <img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-40 h-28 object-cover rounded-md mt-3"
+                    />
+
                   </div>
-                </div>
+
+                  {/* Arrow */}
+                  {index !== processSteps.length - 1 && (
+                    <ArrowComponent className="w-6 h-6 text-gray-400 hidden md:block" />
+                  )}
+
+                </React.Fragment>
               );
             })}
+
           </div>
 
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Process Highlights */}
       <section className="py-16 lg:py-0 bg-gradient-to-b lg:pt-3 from-blue-50 to-white scale-75">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
@@ -258,7 +311,7 @@ const Process = () => {
           </a>
         </div>
       </section>
-    </div>
+    </div >
   );
 };
 
