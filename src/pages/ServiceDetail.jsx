@@ -257,6 +257,23 @@ const ServiceDetail = () => {
           ))}
         </div>
       </section>
+      {/* CTA Section */}
+      <section className="py-16 lg:py-12 bg-gradient-to-r from-blue-900 to-sky-700 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Experience Our Solution-Driven Approach
+          </h2>
+          <p className="text-xl mb-8 text-sky-100">
+            Let us handle your laundry with care, consistency, and professionalism
+          </p>
+          <a href="/contact">
+            <button className="bg-white text-sky-600 hover:bg-sky-50 font-semibold px-8 py-4 rounded-lg text-lg inline-flex items-center transition-colors shadow-lg">
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
