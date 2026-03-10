@@ -24,14 +24,14 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-2 md:py-3">
+        <div className="flex justify-between items-center py-0 md:py-0 ">
 
           {/* Logo */}
           <Link to="/" className="flex items-center no-underline">
             <img
               src="/logo.png"
               alt="Venus Fabcare Logo"
-              className="h-16 md:h-20 lg:h-24 w-auto"
+              className="h-16 md:h-28 lg:h-32 w-auto"
             />
           </Link>
 
