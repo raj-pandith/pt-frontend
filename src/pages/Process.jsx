@@ -4,6 +4,8 @@ import {
   CheckCircle, Box, Truck, ArrowRight, Building2, MapPin, ArrowDown, ArrowLeft,
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
+import ProcessFlow from './ProcessFlow';
+
 
 const processSteps = [
   {
@@ -101,7 +103,7 @@ const Process = () => {
       </section> */}
 
 
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="flex flex-wrap items-center justify-center gap-8">
@@ -115,29 +117,27 @@ const Process = () => {
 
               let ArrowComponent = ArrowRight;
 
-              // Even row → arrows go right
+              // EVEN ROW → Left to Right
               if (row % 2 === 0) {
                 if (position === itemsPerRow - 1) {
-                  ArrowComponent = ArrowDown; // last item → go down
+                  ArrowComponent = ArrowDown;
                 } else {
                   ArrowComponent = ArrowRight;
                 }
               }
 
-              // Odd row → arrows go left
+              // ODD ROW → Right to Left
               else {
-                if (position === itemsPerRow - 1) {
+                if (position === 0) {
                   ArrowComponent = ArrowDown;
                 } else {
                   ArrowComponent = ArrowLeft;
                 }
               }
 
-
               return (
                 <React.Fragment key={step.id}>
 
-                  {/* Step */}
                   <div className="flex flex-col items-center text-center w-48">
 
                     <div className="w-16 h-16 rounded-full bg-sky-600 flex items-center justify-center mb-3">
@@ -160,10 +160,28 @@ const Process = () => {
 
                   </div>
 
-                  {/* Arrow */}
                   {index !== processSteps.length - 1 && (
                     <ArrowComponent className="w-6 h-6 text-gray-400 hidden md:block" />
                   )}
+
+                  {(index + 1) % itemsPerRow === 0 &&
+                    index !== processSteps.length - 1 && (
+
+                      <div className="w-full flex justify-end my-8">
+
+                        <div className="flex items-center gap-3">
+
+                          <ArrowDown className="w-6 h-6 text-gray-400" />
+
+                          <div className="border-t-2 border-dashed border-gray-400 w-40"></div>
+
+                          <ArrowLeft className="w-6 h-6 text-gray-400" />
+
+                        </div>
+
+                      </div>
+
+                    )}
 
                 </React.Fragment>
               );
@@ -172,10 +190,14 @@ const Process = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
+      <div>
+        <div>
 
-
+          <ProcessFlow></ProcessFlow>
+        </div>
+      </div>
 
 
 
