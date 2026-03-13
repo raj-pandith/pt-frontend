@@ -271,7 +271,7 @@ const Process = () => {
       </section>
 
       {/* Operational Setup */}
-      <section className="py-12 lg:py-0 lg:pb-6 -m-5 bg-white scale-90">
+      <section className="py-12 lg:py-0 lg:pb-6 -m-4 bg-white scale-90  pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
